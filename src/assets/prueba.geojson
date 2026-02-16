@@ -204,6 +204,90 @@
           55.0888
         ]
       }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Castle Ward",
+        "series": "Game of Thrones",
+        "scene": "WinterFell Surroundings",
+        "real_place": "Castle Ward",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Sean Bean",
+            "image": "assets/seanBean.webp"
+          },
+          {
+            "name": "Maisie Williams",
+            "image": "assets/sibernic.jpg"
+          },
+          {
+            "name": "Sophie Turner",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/castleward.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2240,
+          54.6996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Tollymore Forest Park",
+        "series": "Game of Thrones",
+        "scene": "Bosques alrededor de Winterfell ",
+        "real_place": "Tollymore Forest Park",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Sean Bean",
+            "image": "assets/seanBean.webp"
+          }
+        ],
+        "place_image": "assets/Tollymore.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8450,
+          54.4009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Mýrdalsjokull Glacier",
+        "series": "Game of Thrones",
+        "scene": "Mas allá del muro",
+        "real_place": "Mýrdalsjökull Glacier",
+        "country": "Islandia",
+        "actors": [
+          {
+            "name": "Jon Snow",
+            "image": "assets/jon.jpg"
+          },
+           {
+            "name": "Igritte",
+            "image": "assets/roseleslie.jpg"
+          }
+        ],
+        "place_image": "assets/masalladelmuro.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.0800,
+          63.6500
+        ]
+      }
     }
   ]
 }
