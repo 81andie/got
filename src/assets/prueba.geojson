@@ -1,0 +1,209 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "got-kings-landing",
+        "series": "Game of Thrones",
+        "scene": "Desembarco del Rey",
+        "real_place": "Dubrovnik",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          }
+        ],
+        "place_image": "assets/dubrovnik.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.0944,
+          42.6507
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "got-braavos",
+        "series": "Game of Thrones",
+        "scene": "Braavos (Arya Stark)",
+        "real_place": "Šibenik",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Maisie Williams",
+            "image": "assets/sibernic.jpg"
+          }
+        ],
+        "place_image": "assets/sibernic.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.895,
+          43.734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Jardines Kings Landing",
+        "series": "Game of Thrones",
+        "scene": "Jardines King's Landing",
+        "real_place": "Tresteno Arboretum",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Natalie Dormer",
+            "image": "assets/nataliedormer.jpg"
+          },
+          {
+            "name": "Sophie Turner",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/tresteno.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9991,
+          42.7236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Fort Lovrijenac",
+        "series": "Game of Thrones",
+        "scene": "BlackwaterBay",
+        "real_place": "For Lovrijenac",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Natalie Dormer",
+            "image": "assets/Lena.jpg"
+          }
+        ],
+        "place_image": "assets/for.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1105,
+          42.6405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Qarth Essos",
+        "series": "Game of Thrones",
+        "scene": "Qarth Essos",
+        "real_place": "Lokrum",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/lokrum.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3399,
+          42.4748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Meereen",
+        "series": "Game of Thrones",
+        "scene": "Meereen",
+        "real_place": "Split(klis Fortress)",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/splitres.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5940,
+          43.5138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Ballintoy Harbour",
+        "series": "Game of Thrones",
+        "scene": "Iron Islands",
+        "real_place": "Ballintoy",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Alfie Allen",
+            "image": "/assets/alfieallen"
+          }
+        ],
+        "place_image": "assets/Ballintoy.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1894,
+          55.2542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Dark Hedges",
+        "series": "Game of Thrones",
+        "scene": "Kingsroad bosque",
+        "real_place": "Dark Hedges",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Maisie Williams",
+            "image": "assets/sibernic.jpg"
+          },
+          {
+            "name": "Sophie Turner",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/darkHedges.avif"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.4158,
+          55.0888
+        ]
+      }
+    }
+  ]
+}
