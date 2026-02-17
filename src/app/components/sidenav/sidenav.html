@@ -1,11 +1,8 @@
 
 <!-- drawer init and toggle -->
-
-  <div class="text-center absolute top-30 left-2">
+<div class="text-center absolute top-30 left-2">
    <button
-    (click)="!openedSidebar()"
-
-
+(click)="toggle()"
 
    class="inline-flex items-center justify-center text-black bg-amber-200 box-border border border-transparent hover:bg-amber-300 focus:ring-4 focus:ring-amber-200 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
     Abrir Panel
@@ -13,20 +10,14 @@
 </div>
 
 
-
-@if(openedSidebar()){
-
-
-
-
-
 <!-- drawer component -->
 
   <div id="drawer-right-example"
-  class="fixed  top-0 right-0 z-50 h-screen p-4  translate-x-0 overflow-y-auto transition-transform  w-96  bg-no-repeat bg-cover  bg--right mask-alpha mask-r-from-black mask-r-from-85% mask-r-to-transparent bg-[url(/mapaantiguo.jpg)] bg-cyan-100 bg-blend-overlay  " tabindex="-1" aria-labelledby="drawer-right-label"
+  class="fixed top-0 right-0 z-50 h-screen p-4 overflow-y-auto transition-transform  w-96  bg-no-repeat bg-cover  bg--right mask-alpha mask-r-from-black mask-r-from-85% mask-r-to-transparent bg-[url(/mapaantiguo.jpg)] bg-cyan-100 bg-blend-overlay  " tabindex="-1" aria-labelledby="drawer-right-label"
  [ngClass]="{
 
-    'translate-x-full': !openedSidebar()
+    'translate-x-0': opened,
+    'translate-x-full': !opened
   }"
 
   >
@@ -74,4 +65,4 @@
 
 </div>
 
-}
+

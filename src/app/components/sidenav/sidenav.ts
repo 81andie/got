@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit } from '@angular/core';
+import { Component, computed, effect, inject, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { GotGeoService } from '../../../services/GotGeo.service';
 
@@ -10,20 +10,29 @@ import { GotGeoService } from '../../../services/GotGeo.service';
 })
 export class Sidenav {
 
+    constructor() {
+
+    effect(() => {
+      if (this.localization()) {
+        this.opened = true;   // se abre automáticamente
+      }
+    });
+  }
+
   private mapState = inject(GotGeoService)
   localization = this.mapState.selectLocation
+  opened = false;
 
-
-  openedSidebar = computed(() => !!this.localization());
 
   toggle() {
-    // solo abre si hay localización
-    if (this.localization()) return;
+  if (!this.localization()) return; // solo abre si hay localización
+  this.opened = !this.opened;
   }
 
 
   clear() {
     this.mapState.clear();
+    this.opened = false;
   }
 
 
