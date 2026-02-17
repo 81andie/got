@@ -11,11 +11,11 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Emilia Clarke",
+            "name": "Daenerys Targaryan",
             "image": "/assets/emilia.jpg"
           },
           {
-            "name": "Peter Dinklage",
+            "name": "Tyrion Lannister",
             "image": "assets/Peter.webp"
           }
         ],
@@ -39,7 +39,7 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Maisie Williams",
+            "name": "Arya Stark",
             "image": "assets/sibernic.jpg"
           }
         ],
@@ -91,7 +91,7 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Natalie Dormer",
+            "name": "Cersei Lannyster",
             "image": "assets/Lena.jpg"
           }
         ],
@@ -115,7 +115,7 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Emilia Clarke",
+            "name": "Daenerys Targaryan",
             "image": "/assets/emilia.jpg"
           }
         ],
@@ -139,7 +139,7 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Emilia Clarke",
+            "name": "Daenerys Targaryan",
             "image": "/assets/emilia.jpg"
           }
         ],
@@ -163,7 +163,7 @@
         "country": "Irlanda del Norte",
         "actors": [
           {
-            "name": "Alfie Allen",
+            "name": "Theon Greyjoy",
             "image": "/assets/alfieallen"
           }
         ],
@@ -187,11 +187,11 @@
         "country": "Irlanda del Norte",
         "actors": [
           {
-            "name": "Maisie Williams",
+            "name": "Arya Stark",
             "image": "assets/sibernic.jpg"
           },
           {
-            "name": "Sophie Turner",
+            "name": "Sansa Stark",
             "image": "assets/sophieTurner.jpg"
           }
         ],
@@ -215,7 +215,7 @@
         "country": "Irlanda del Norte",
         "actors": [
           {
-            "name": "Sean Bean",
+            "name": "Ned Stark",
             "image": "assets/seanBean.webp"
           },
           {
@@ -247,7 +247,7 @@
         "country": "Irlanda del Norte",
         "actors": [
           {
-            "name": "Sean Bean",
+            "name": "Ned Stark",
             "image": "assets/seanBean.webp"
           }
         ],
@@ -274,7 +274,7 @@
             "name": "Jon Snow",
             "image": "assets/jon.jpg"
           },
-           {
+          {
             "name": "Igritte",
             "image": "assets/roseleslie.jpg"
           }

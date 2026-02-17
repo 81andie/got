@@ -21,6 +21,7 @@ export class Map implements OnInit {
   }
 
   private gotGeoService = inject(GotGeoService)
+  public mapState = inject(GotGeoService);
   private map: L.Map | undefined;
   private markers: GotGeometry[] = []
 
@@ -49,22 +50,29 @@ export class Map implements OnInit {
   getAlLocalize() {
 
     const cityIcon = L.icon({
-    iconUrl: 'assets/marker.png',   // ruta a tu icono
-    iconSize: [20, 20],
-    iconAnchor: [15, 40],
-    popupAnchor: [0, -35]
-  });
+      iconUrl: 'assets/marker.png',   // ruta a tu icono
+      iconSize: [20, 20],
+      iconAnchor: [15, 40],
+      popupAnchor: [0, -35]
+    });
 
 
     this.gotGeoService.getLocalization().subscribe((data: GotGeometry[]) => {
-      console.log(data)
+    //  console.log(data)
       if (this.map) {
         L.geoJSON(data, {
-          pointToLayer: (feature: GotFeature, latlng: L.LatLng) => L.marker(latlng, {icon: cityIcon}),
+          pointToLayer: (feature: GotFeature, latlng: L.LatLng) => L.marker(latlng, { icon: cityIcon }),
           onEachFeature: (feature: GotFeature, layer: L.Layer) => {
             const p = feature.properties;
 
-            console.log(p.place_image)
+           // console.log(p.place_image)
+
+            layer.on('click', () => {
+            // 🔥 AQUÍ ESTÁ LA CONEXIÓN CON EL SIDEBAR
+            this.mapState.setLocation(p);
+          });
+
+
             layer.bindPopup(`
 
 
