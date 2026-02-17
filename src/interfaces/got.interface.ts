@@ -17,6 +17,7 @@ export interface GotProperties {
   country: string;
   actors: GotActor[];
   place_image: string;
+  place_logo: string;
 }
 
 export interface GotActor {

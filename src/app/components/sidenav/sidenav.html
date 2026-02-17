@@ -37,8 +37,6 @@
    <p class="mb-3 text-sm text-body font-bold">Estás muy cerca<a href="#" class="font-medium text-heading underline hover:no-underline"></a> de estos escenarios</p>
 
    <p class="mb-5 text-xl text-body font-bold">{{ localization()?.real_place }}</p>
-   <p class="mb-5 text-xs text-body font-bold">Serie: {{localization()?.series}}</p>
-    <p class="mb-5 text-md text-body font-bold">Escene: {{localization()?.scene}}</p>
 
    <ul>
 
@@ -55,7 +53,12 @@
     </li>
    </ul>
 
-   <p class="mt-5 mb-5 text-xl text-body font-bold">Personajes</p>
+   <div class="flex mt-5">
+<p class="mb-5 text-md text-body font-bold">Escene: {{localization()?.scene}}</p>
+    <img [src]="localization()?.place_logo" class="h-20 object-cover">
+</div>
+
+ <p class="mt-5 mb-5 text-xl text-body font-bold">Personajes</p>
    @for( item of localization()?.actors; track item;){
 <div class="flex justify-center">
   <div class="flex flex-col">

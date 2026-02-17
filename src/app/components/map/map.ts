@@ -31,11 +31,10 @@ export class Map implements OnInit {
       zoom: 4
     });
 
-    const tiles = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-      maxZoom: 10,
-      minZoom: 3,
-      attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-    });
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+});
 
     L.control.zoom({
       position: 'bottomright' // bottomleft | bottomright | topleft | topright
@@ -52,7 +51,7 @@ export class Map implements OnInit {
     const cityIcon = L.icon({
       iconUrl: 'assets/marker.png',   // ruta a tu icono
       iconSize: [20, 20],
-      iconAnchor: [15, 40],
+      iconAnchor: [25, 20],
       popupAnchor: [0, -35]
     });
 
