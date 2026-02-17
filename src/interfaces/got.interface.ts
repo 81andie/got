@@ -21,6 +21,7 @@ export interface GotProperties {
 
 export interface GotActor {
   name: string;
+  nameActor:string;
   image: string;
 }
 

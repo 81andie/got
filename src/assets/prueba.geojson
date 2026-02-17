@@ -12,10 +12,12 @@
         "actors": [
           {
             "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
             "image": "/assets/emilia.jpg"
           },
           {
             "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
             "image": "assets/Peter.webp"
           }
         ],
@@ -40,6 +42,7 @@
         "actors": [
           {
             "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
             "image": "assets/sibernic.jpg"
           }
         ],
@@ -63,11 +66,13 @@
         "country": "Croacia",
         "actors": [
           {
-            "name": "Natalie Dormer",
+            "name": "Margaery Tyrell",
+            "nameActor": "Natalie Dormer",
             "image": "assets/nataliedormer.jpg"
           },
           {
-            "name": "Sophie Turner",
+            "name": "Sansa Stark",
+            "nameActor": "Sophie Turner",
             "image": "assets/sophieTurner.jpg"
           }
         ],
@@ -92,6 +97,7 @@
         "actors": [
           {
             "name": "Cersei Lannyster",
+            "nameActor": "Lena Headey",
             "image": "assets/Lena.jpg"
           }
         ],
@@ -116,6 +122,7 @@
         "actors": [
           {
             "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
             "image": "/assets/emilia.jpg"
           }
         ],
@@ -140,6 +147,7 @@
         "actors": [
           {
             "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
             "image": "/assets/emilia.jpg"
           }
         ],
@@ -164,6 +172,7 @@
         "actors": [
           {
             "name": "Theon Greyjoy",
+            "nameActor":"Alfie Allen",
             "image": "/assets/alfieallen"
           }
         ],
@@ -186,12 +195,14 @@
         "real_place": "Dark Hedges",
         "country": "Irlanda del Norte",
         "actors": [
-          {
+        {
             "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
             "image": "assets/sibernic.jpg"
           },
           {
             "name": "Sansa Stark",
+            "nameActor":"Sophie Turner",
             "image": "assets/sophieTurner.jpg"
           }
         ],
@@ -216,14 +227,17 @@
         "actors": [
           {
             "name": "Ned Stark",
+            "nameActor": "Sean Bean",
             "image": "assets/seanBean.webp"
           },
           {
-            "name": "Maisie Williams",
+            "name": "Arya Stark",
+             "nameActor": "Maisie Williams",
             "image": "assets/sibernic.jpg"
           },
           {
             "name": "Sophie Turner",
+            "nameActor": "Sansa Stark",
             "image": "assets/sophieTurner.jpg"
           }
         ],
@@ -248,8 +262,10 @@
         "actors": [
           {
             "name": "Ned Stark",
+            "nameActor": "Sean Bean",
             "image": "assets/seanBean.webp"
           }
+
         ],
         "place_image": "assets/Tollymore.webp"
       },
@@ -272,10 +288,12 @@
         "actors": [
           {
             "name": "Jon Snow",
+            "nameActor":"Kit Harrington",
             "image": "assets/jon.jpg"
           },
           {
             "name": "Igritte",
+             "nameActor":"Rose Leslie",
             "image": "assets/roseleslie.jpg"
           }
         ],
@@ -288,6 +306,99 @@
           63.6500
         ]
       }
+    },
+
+       {
+      "type": "Feature",
+      "properties": {
+        "id": "Vatnajökull Glacier",
+        "series": "Game of Thrones",
+        "scene": "Norte Helado",
+        "real_place": "Vatnajökull Glacier",
+        "country": "Islandia",
+        "actors": [
+          {
+            "name": "Jon Snow",
+            "nameActor":"Kit Harrington",
+            "image": "assets/jon.jpg"
+          },
+          {
+            "name": "Igritte",
+             "nameActor":"Rose Leslie",
+            "image": "assets/roseleslie.jpg"
+          },
+           {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/Vatnajokull.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.9000,
+          64.0480
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "Alcazar de Sevilla",
+        "series": "Game of Thrones",
+        "scene": "Dorne, Water Gardens",
+        "real_place": "Alcázar de Sevilla",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Oberyn Martell",
+            "nameActor":"Pedro Pascal",
+            "image": "assets/pedro.webp"
+          }
+
+        ],
+        "place_image": "assets/alcazar.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9913,
+          37.3830
+        ]
+      }
+    },
+
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "Alcazar de Sevilla",
+        "series": "Game of Thrones",
+        "scene": "Dorne, Water Gardens",
+        "real_place": "Alcázar de Sevilla",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Oberyn Martell",
+            "nameActor":"Pedro Pascal",
+            "image": "assets/pedro.webp"
+          }
+
+        ],
+        "place_image": "assets/alcazar.webp"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9913,
+          37.3830
+        ]
+      }
     }
+
+
   ]
 }
