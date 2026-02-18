@@ -51,9 +51,10 @@ export class Map implements OnInit {
     const cityIcon = L.icon({
       iconUrl: 'assets/marker.png',   // ruta a tu icono
       iconSize: [20, 20],
-      iconAnchor: [25, 20],
+      iconAnchor: [25, 10],
       popupAnchor: [0, -35]
     });
+
 
 
     this.gotGeoService.getLocalization().subscribe((data: GotGeometry[]) => {
