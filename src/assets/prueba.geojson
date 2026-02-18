@@ -1118,32 +1118,7 @@
         ]
       }
     },
-    {
-      "type": "Feature",
-      "properties": {
-        "id": "Dinorwig Quarry",
-        "series": "House of the Dragon",
-        "scene": "Harrental exteriores",
-        "real_place": "Gwynedd",
-        "country": "Gales",
-        "actors": [
-          {
-            "name": "Matt Smith",
-            "nameActor": "Daemon Targaryen",
-            "image": "assets/matSmith.jpg"
-          }
-        ],
-        "place_image": "assets/BourneWoods.jpg",
-        "place_logo": "assets/house.png"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -4.10541,
-          53012343
-        ]
-      }
-    },
+    
     {
       "type": "Feature",
       "properties": {
@@ -1165,8 +1140,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          -4.10541,
-          53.12344
+          -4.11452,
+          53.13399
         ]
       }
     },
