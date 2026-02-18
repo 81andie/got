@@ -987,7 +987,81 @@
           40.04388
         ]
       }
+
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HolyWell Bay Beach",
+        "series": "House of the Dragon",
+        "scene": "Stepstones coastline",
+        "real_place": "Cornwall",
+        "country": "Inglaterra",
+        "actors": [
+
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+
+
+            {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+
+        ],
+        "place_image": "assets/Holiwellbeach.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.14315,
+          50.39118
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "Kynance Cove",
+        "series": "House of the Dragon",
+        "scene": "Stepstones Camp Beach",
+        "real_place": "Kynance Cove(CornWall)",
+        "country": "Inglaterra",
+        "actors": [
+
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+
+
+            {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+
+        ],
+        "place_image": "assets/kinanceCove.webp",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.23146,
+          49.97571
+        ]
+      }
     }
+
 
 
 
