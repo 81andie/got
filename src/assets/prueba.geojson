@@ -1254,7 +1254,7 @@
             "image": "assets/emmaarcy.jpg"
           }
         ],
-        "place_image": "assets/penmon.jpeg",
+        "place_image": "assets/ogwenvalley.jpg",
         "place_logo": "assets/house.png"
       },
       "geometry": {
@@ -1262,6 +1262,102 @@
         "coordinates": [
           -4.06183,
           53.19122
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "Glenarm Castle Estate",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Praderas/Campamentos",
+        "real_place": "Castle Estate,(Glenarm)",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/glenarm.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.95612,
+          54.96629
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "Hidden Village of Galboly",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Pueblo rural",
+        "real_place": "Glens of Antrim",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/hiddenVillage.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.98166,
+          55.05404
+        ]
+      }
+    },
+
+       {
+      "type": "Feature",
+      "properties": {
+        "id": "Cave Hill",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Exteriores",
+        "real_place": "Cave Hill,(Belfast)",
+        "country": "Irlanda del Norte",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/cavehill.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.95094,
+          54.64938
         ]
       }
     }
