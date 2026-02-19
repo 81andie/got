@@ -14,7 +14,7 @@ export class Sidenav {
 
     effect(() => {
       if (this.localization()) {
-        this.opened = true;   // se abre automáticamente
+        this.opened = true;   
       }
     });
 
@@ -29,7 +29,7 @@ export class Sidenav {
 
 
   toggle() {
-  if (!this.localization()) return; 
+  if (!this.localization()) return;
   this.opened = !this.opened;
   }
 
