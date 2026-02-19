@@ -1,4 +1,4 @@
-import { Component, inject, Inject, OnInit, PLATFORM_ID } from '@angular/core';
+import { Component, effect, inject, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import * as L from 'leaflet';
 import { GotFeature, GotGeoJson, GotGeometry } from '../../../interfaces/got.interface';
@@ -18,6 +18,13 @@ export class Map implements OnInit {
   constructor(@Inject(PLATFORM_ID) platformId: Object,
     private gotService: GotGeoService) {
     this.isBrowser = isPlatformBrowser(platformId);
+
+    effect(() => {
+      const selected = this.mapStateUpdate.searchLocalition()
+      if (!selected || !this.map) return;
+     
+
+    })
   }
 
   private gotGeoService = inject(GotGeoService)
@@ -68,8 +75,9 @@ export class Map implements OnInit {
             // console.log(p.place_image)
 
             layer.on('click', () => {
-              // 🔥 AQUÍ ESTÁ LA CONEXIÓN CON EL SIDEBAR
+
               this.mapState.setLocation(p);
+              this.mapStateUpdate.setSearchLocation(p)
             });
 
 

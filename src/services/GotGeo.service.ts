@@ -21,6 +21,10 @@ export class GotGeoService {
   return this.http.get<[GotGeometry]>(this.geoLocalize)
 }
 
+  getLocalizationMarkers(){
+  return this.http.get<[GotFeature]>(this.geoLocalize)
+}
+
   setLocation(properties: GotFeature['properties']) {
     this._selectLocation.set(properties);
   }

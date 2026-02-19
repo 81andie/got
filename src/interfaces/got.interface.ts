@@ -10,6 +10,8 @@ export interface GotFeature {
 }
 
 export interface GotProperties {
+  latitude: any;
+  longitude: any;
   id: string;
   series: string;
   scene: string;
