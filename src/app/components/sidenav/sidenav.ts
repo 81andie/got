@@ -18,7 +18,7 @@ export class Sidenav {
       }
     });
 
-   
+
 
 
   }
@@ -29,7 +29,7 @@ export class Sidenav {
 
 
   toggle() {
-  if (!this.localization()) return; // solo abre si hay localización
+  if (!this.localization()) return; 
   this.opened = !this.opened;
   }
 
