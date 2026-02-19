@@ -1,4 +1,4 @@
-import { Component, computed, effect, inject, OnInit } from '@angular/core';
+import { Component, computed, effect, Inject, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CommonModule } from '@angular/common'
 import { GotGeoService } from '../../../services/GotGeo.service';
 
@@ -10,13 +10,17 @@ import { GotGeoService } from '../../../services/GotGeo.service';
 })
 export class Sidenav {
 
-    constructor() {
+    constructor(@Inject(PLATFORM_ID) platformId: Object) {
 
     effect(() => {
       if (this.localization()) {
         this.opened = true;   // se abre automáticamente
       }
     });
+
+   
+
+
   }
 
   private mapState = inject(GotGeoService)

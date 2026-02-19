@@ -19,10 +19,22 @@ export class Map implements OnInit {
     private gotService: GotGeoService) {
     this.isBrowser = isPlatformBrowser(platformId);
 
+
+
     effect(() => {
       const selected = this.mapStateUpdate.searchLocalition()
-      if (!selected || !this.map) return;
-     
+      if (!selected.length || !this.map) return
+
+      const latlngs = selected.map(p => [p.latitude, p.longitude] as [number, number]);
+      console.log(latlngs)
+      this.map.fitBounds(latlngs, {
+        padding: [50, 50], // margen alrededor de los markers
+        animate: true,
+        duration: 1.5,
+        maxZoom: 18
+      })
+
+
 
     })
   }
@@ -57,7 +69,7 @@ export class Map implements OnInit {
 
     const cityIcon = L.icon({
       iconUrl: 'assets/marker.png',   // ruta a tu icono
-      iconSize: [20, 20],
+      iconSize: [30, 30],
       iconAnchor: [25, 10],
       popupAnchor: [0, -35]
     });
@@ -77,7 +89,7 @@ export class Map implements OnInit {
             layer.on('click', () => {
 
               this.mapState.setLocation(p);
-              this.mapStateUpdate.setSearchLocation(p)
+              this.mapStateUpdate.setSearchLocation([{ ...p, latitude: feature.geometry.coordinates[1], longitude: feature.geometry.coordinates[0] }])
             });
 
 

@@ -21,25 +21,39 @@ export class MiniBuscador implements OnInit {
 
 
 
-getInputLocalization() {
+  getInputLocalization() {
 
-  const input = this.inputLocalization.trim().toLowerCase()
-  let filteredFeatures = this.allMarkers.filter(item =>
-    item.properties.real_place.toLowerCase().includes(input) ||
-    item.properties.country.toLowerCase() === input
-  );
+    const input = this.inputLocalization.trim().toLowerCase()
+    let filteredFeatures = this.allMarkers.filter(item =>
+      item.properties.real_place.toLowerCase().includes(input) ||
+      item.properties.country.toLowerCase() === input
+    );
 
-  if (filteredFeatures.length > 0) {
-    this.mapStateUpdated.setSearchLocation(filteredFeatures[0].properties);
-    console.log('Valor actual de la señal:', this.mapStateUpdated.searchLocalition());
+    if (filteredFeatures.length > 0) {
+
+    const propsWithCoords = filteredFeatures.map(f => ({
+      ...f.properties,
+      latitude: f.geometry.coordinates[1],
+      longitude: f.geometry.coordinates[0]
+    }));
+
+
+
+this.mapStateUpdated.setSearchLocation(propsWithCoords);
+
+
+
+
+
+
   }
 }
 
 
-  getAllMarkers (){
-  this.mapStateUpdated. getLocalizationMarkers().subscribe((geoJson:any)=>{
-   this.allMarkers=geoJson.features||[]
-     this.getInputLocalization()
+getAllMarkers(){
+  this.mapStateUpdated.getLocalizationMarkers().subscribe((geoJson: any) => {
+    this.allMarkers = geoJson.features || []
+    this.getInputLocalization()
 
   })
 }
@@ -53,12 +67,12 @@ getInputLocalization() {
 
 
 
-  ngOnInit(): void {
-      this.getAllMarkers()
+ngOnInit(): void {
+  this.getAllMarkers()
 
 
 
-  }
+}
 
 }
 

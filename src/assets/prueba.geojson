@@ -174,7 +174,7 @@
         "series": "Game of Thrones",
         "scene": "Iron Islands",
         "real_place": "Ballintoy",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Theon Greyjoy",
@@ -200,7 +200,7 @@
         "series": "Game of Thrones",
         "scene": "Kingsroad bosque",
         "real_place": "Dark Hedges",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Arya Stark",
@@ -231,7 +231,7 @@
         "series": "Game of Thrones",
         "scene": "WinterFell Surroundings",
         "real_place": "Castle Ward",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Ned Stark",
@@ -267,7 +267,7 @@
         "series": "Game of Thrones",
         "scene": "Bosques alrededor de Winterfell ",
         "real_place": "Tollymore Forest Park",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Ned Stark",
@@ -1118,7 +1118,7 @@
         ]
       }
     },
-    
+
     {
       "type": "Feature",
       "properties": {
@@ -1248,7 +1248,7 @@
         "series": "El caballero de los 7 reinos",
         "scene": "Praderas/Campamentos",
         "real_place": "Castle Estate,(Glenarm)",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Peter Claffey",
@@ -1280,7 +1280,7 @@
         "series": "El caballero de los 7 reinos",
         "scene": "Pueblo rural",
         "real_place": "Glens of Antrim",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Peter Claffey",
@@ -1312,7 +1312,7 @@
         "series": "El caballero de los 7 reinos",
         "scene": "Exteriores",
         "real_place": "Cave Hill,(Belfast)",
-        "country": "Irlanda del Norte",
+        "country": "Irlanda",
         "actors": [
           {
             "name": "Peter Claffey",
