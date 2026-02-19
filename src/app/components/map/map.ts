@@ -22,6 +22,8 @@ export class Map implements OnInit {
 
   private gotGeoService = inject(GotGeoService)
   public mapState = inject(GotGeoService);
+  public mapStateUpdate = inject(GotGeoService)
+
   private map: L.Map | undefined;
   private markers: GotGeometry[] = []
 
@@ -32,9 +34,9 @@ export class Map implements OnInit {
     });
 
     const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-	maxZoom: 19,
-	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-});
+      maxZoom: 19,
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    });
 
     L.control.zoom({
       position: 'bottomright' // bottomleft | bottomright | topleft | topright
@@ -43,8 +45,6 @@ export class Map implements OnInit {
     tiles.addTo(this.map);
 
   }
-
-
 
   getAlLocalize() {
 
@@ -58,19 +58,19 @@ export class Map implements OnInit {
 
 
     this.gotGeoService.getLocalization().subscribe((data: GotGeometry[]) => {
-    //  console.log(data)
+      //  console.log(data)
       if (this.map) {
         L.geoJSON(data, {
           pointToLayer: (feature: GotFeature, latlng: L.LatLng) => L.marker(latlng, { icon: cityIcon }),
           onEachFeature: (feature: GotFeature, layer: L.Layer) => {
             const p = feature.properties;
 
-           // console.log(p.place_image)
+            // console.log(p.place_image)
 
             layer.on('click', () => {
-            // 🔥 AQUÍ ESTÁ LA CONEXIÓN CON EL SIDEBAR
-            this.mapState.setLocation(p);
-          });
+              // 🔥 AQUÍ ESTÁ LA CONEXIÓN CON EL SIDEBAR
+              this.mapState.setLocation(p);
+            });
 
 
             layer.bindPopup(`
