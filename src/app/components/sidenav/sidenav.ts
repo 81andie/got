@@ -14,12 +14,9 @@ export class Sidenav {
 
     effect(() => {
       if (this.localization()) {
-        this.opened = true;   
+        this.opened = true;
       }
     });
-
-
-
 
   }
 
