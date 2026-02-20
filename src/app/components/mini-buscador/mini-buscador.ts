@@ -31,48 +31,42 @@ export class MiniBuscador implements OnInit {
 
     if (filteredFeatures.length > 0) {
 
-    const propsWithCoords = filteredFeatures.map(f => ({
-      ...f.properties,
-      latitude: f.geometry.coordinates[1],
-      longitude: f.geometry.coordinates[0]
-    }));
+      const propsWithCoords = filteredFeatures.map(f => ({
+        ...f.properties,
+        latitude: f.geometry.coordinates[1],
+        longitude: f.geometry.coordinates[0]
+      }));
 
 
 
-this.mapStateUpdated.setSearchLocation(propsWithCoords);
+      this.mapStateUpdated.setSearchLocation(propsWithCoords);
+    }
+  }
+
+
+  getAllMarkers() {
+    this.mapStateUpdated.getLocalizationMarkers().subscribe((geoJson: any) => {
+      this.allMarkers = geoJson.features || []
+      this.getInputLocalization()
+
+    })
+  }
 
 
 
+
+
+
+
+
+
+
+  ngOnInit(): void {
+    this.getAllMarkers()
 
 
 
   }
-}
-
-
-getAllMarkers(){
-  this.mapStateUpdated.getLocalizationMarkers().subscribe((geoJson: any) => {
-    this.allMarkers = geoJson.features || []
-    this.getInputLocalization()
-
-  })
-}
-
-
-
-
-
-
-
-
-
-
-ngOnInit(): void {
-  this.getAllMarkers()
-
-
-
-}
 
 }
 

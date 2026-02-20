@@ -1,7 +1,7 @@
 import { Component, effect, inject, Inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import * as L from 'leaflet';
-import { GotFeature, GotGeoJson, GotGeometry } from '../../../interfaces/got.interface';
+import { GotFeature, GotGeoJson, GotGeometry, GotCoordinatesMarker } from '../../../interfaces/got.interface';
 import { GotGeoService } from '../../../services/GotGeo.service';
 
 
@@ -19,14 +19,12 @@ export class Map implements OnInit {
     private gotService: GotGeoService) {
     this.isBrowser = isPlatformBrowser(platformId);
 
-
-
     effect(() => {
       const selected = this.mapStateUpdate.searchLocalition()
       if (!selected.length || !this.map) return
 
       const latlngs = selected.map(p => [p.latitude, p.longitude] as [number, number]);
-      console.log(latlngs)
+      //console.log(latlngs)
       this.map.fitBounds(latlngs, {
         padding: [50, 50], // margen alrededor de los markers
         animate: true,
@@ -42,6 +40,8 @@ export class Map implements OnInit {
   private gotGeoService = inject(GotGeoService)
   public mapState = inject(GotGeoService);
   public mapStateUpdate = inject(GotGeoService)
+
+  public markerPosicion: number[] = []
 
   private map: L.Map | undefined;
   private markers: GotGeometry[] = []
@@ -63,7 +63,57 @@ export class Map implements OnInit {
 
     tiles.addTo(this.map);
 
+    var popup = L.popup();
+
+    const onMapClick = (e: any) => {
+      if (this.map) {
+        popup
+          .setLatLng(e.latlng)
+          .setContent("<p class='text-2xl'>Estas aquí</p>")
+          .openOn(this.map);
+
+        const coordinatesArr = this.mapStateUpdate.searchLocalition();
+
+        let puntoA = e.latlng;
+
+        let distanciaMinima = Infinity;
+        let puntoMasCercano;
+
+        coordinatesArr.forEach((item) => {
+
+          const puntoB = L.latLng(item.latitude, item.longitude)
+
+          var distance = puntoA.distanceTo(puntoB);
+
+          console.log(distance)
+
+          if (distance < distanciaMinima) {
+            distanciaMinima = distance
+            puntoMasCercano = puntoB
+          }
+
+        });
+
+
+        if (!puntoMasCercano) return;
+
+        this.map.fitBounds([puntoMasCercano], {
+          padding: [50, 50], // margen alrededor de los markers
+          animate: true,
+          duration: 1.5,
+          maxZoom: 18
+        })
+
+      }
+
+    }
+
+    this.map.on('click', onMapClick);
+
   }
+
+
+
 
   getAlLocalize() {
 
@@ -87,7 +137,6 @@ export class Map implements OnInit {
             // console.log(p.place_image)
 
             layer.on('click', () => {
-
               this.mapState.setLocation(p);
               this.mapStateUpdate.setSearchLocation([{ ...p, latitude: feature.geometry.coordinates[1], longitude: feature.geometry.coordinates[0] }])
             });
@@ -108,9 +157,6 @@ export class Map implements OnInit {
       }
     });
   }
-
-
-
 
   ngOnInit(): void {
     this.initMap();

@@ -32,3 +32,8 @@ export interface GotGeometry {
   type: 'Point';
   coordinates: [number, number]; // [lng, lat]
 }
+
+export interface GotCoordinatesMarker {
+  type: 'Point';
+  coordinates: [number, number]; // [lng, lat]
+}
