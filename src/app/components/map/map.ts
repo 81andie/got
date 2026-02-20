@@ -82,10 +82,7 @@ export class Map implements OnInit {
         coordinatesArr.forEach((item) => {
 
           const puntoB = L.latLng(item.latitude, item.longitude)
-
           var distance = puntoA.distanceTo(puntoB);
-
-          console.log(distance)
 
           if (distance < distanciaMinima) {
             distanciaMinima = distance
