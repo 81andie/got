@@ -98,7 +98,7 @@ export class Map implements OnInit {
           padding: [50, 50], // margen alrededor de los markers
           animate: true,
           duration: 1.5,
-          maxZoom: 18
+          maxZoom: 16
         })
 
       }
