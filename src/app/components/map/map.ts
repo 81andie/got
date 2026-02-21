@@ -96,7 +96,7 @@ export class Map implements OnInit {
           padding: [10, 10], // margen alrededor de los markers
           animate: true,
           duration: 1.5,
-          maxZoom: 16
+          maxZoom: 12
         })
 
        puntoMasCercano=""
@@ -115,9 +115,9 @@ export class Map implements OnInit {
   getAlLocalize() {
 
     const cityIcon = L.icon({
-      iconUrl: 'assets/marker.png',   // ruta a tu icono
+      iconUrl: 'assets/pin-point.png',   // ruta a tu icono
       iconSize: [30, 30],
-      iconAnchor: [25, 10],
+      iconAnchor: [15, 30],
       popupAnchor: [0, -35]
     });
 
@@ -141,13 +141,29 @@ export class Map implements OnInit {
 
             layer.bindPopup(`
 
+  <div class="w-64 space-y-4 font-sans bg-stone-100 rounded-lg">
 
-<div class="space-y-4.5 ">
-        <h3 class="font-semibold text-white p-1 bg-mauve-500">Localizaciones</h3>
-         <h2 class="font-semibold mb-4 ">${p.real_place}</h2>
-        <div class="w-full bg-neutral-quaternary  mb-4">
-        <img src="${p.place_image}">
+    <!-- Label -->
+    <p class="text-xs uppercase tracking-widest text-stone-400">
+      Localización
+    </p>
+
+    <!-- Título -->
+    <h2 class="text-lg font-semibold text-black leading-tight">
+      ${p.real_place}
+    </h2>
+
+    <!-- Imagen -->
+    <div class="overflow-hidden rounded-lg border border-white/10">
+      <img
+        src="${p.place_image}"
+        class="w-full h-36 object-cover"
+        alt="${p.real_place}"
+      >
     </div>
+
+  </div>
+
             `);
           }
         }).addTo(this.map);
