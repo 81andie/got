@@ -32,8 +32,6 @@ export class Map implements OnInit {
         maxZoom: 18
       })
 
-
-
     })
   }
 
@@ -57,15 +55,15 @@ export class Map implements OnInit {
       attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     });
 
-    L.control.zoom({
-      position: 'bottomright' // bottomleft | bottomright | topleft | topright
-    }).addTo(this.map);
+
 
     tiles.addTo(this.map);
 
+
+
     var popup = L.popup();
 
-    const onMapClick = (e: any) => {
+    const onMapClick = (e: L.LeafletMouseEvent) => {
       if (this.map) {
         popup
           .setLatLng(e.latlng)
@@ -77,7 +75,7 @@ export class Map implements OnInit {
         let puntoA = e.latlng;
 
         let distanciaMinima = Infinity;
-        let puntoMasCercano;
+        let puntoMasCercano = null;
 
         coordinatesArr.forEach((item) => {
 
@@ -95,11 +93,13 @@ export class Map implements OnInit {
         if (!puntoMasCercano) return;
 
         this.map.fitBounds([puntoMasCercano], {
-          padding: [50, 50], // margen alrededor de los markers
+          padding: [10, 10], // margen alrededor de los markers
           animate: true,
           duration: 1.5,
           maxZoom: 16
         })
+
+       puntoMasCercano=""
 
       }
 
@@ -142,10 +142,10 @@ export class Map implements OnInit {
             layer.bindPopup(`
 
 
-<div class="space-y-3.5 ">
-        <h3 class="font-semibold text-heading bg-fg-purple">Localizaciones</h3>
-         <span class="font-semibold p-1 mt-1 mb-1">${p.real_place}</span>
-        <div class="w-full bg-neutral-quaternary rounded-full  mb-4">
+<div class="space-y-4.5 ">
+        <h3 class="font-semibold text-white p-1 bg-mauve-500">Localizaciones</h3>
+         <h2 class="font-semibold mb-4 ">${p.real_place}</h2>
+        <div class="w-full bg-neutral-quaternary  mb-4">
         <img src="${p.place_image}">
     </div>
             `);
