@@ -50,20 +50,18 @@ export class Map implements OnInit {
       zoom: 4
     });
 
-    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    const tiles = L.tileLayer( 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors' ,
     });
 
-
-
     tiles.addTo(this.map);
-
 
 
     var popup = L.popup();
 
     const onMapClick = (e: L.LeafletMouseEvent) => {
+      if (!this.map) return;
       if (this.map) {
         popup
           .setLatLng(e.latlng)
@@ -71,13 +69,16 @@ export class Map implements OnInit {
           .openOn(this.map);
 
         const coordinatesArr = this.mapStateUpdate.searchLocalition();
+        if (!coordinatesArr.length) return;
 
         let puntoA = e.latlng;
 
         let distanciaMinima = Infinity;
-        let puntoMasCercano = null;
+        let puntoMasCercano: L.LatLng |null = null;
 
         coordinatesArr.forEach((item) => {
+
+          console.log(item)
 
           const puntoB = L.latLng(item.latitude, item.longitude)
           var distance = puntoA.distanceTo(puntoB);
@@ -93,13 +94,12 @@ export class Map implements OnInit {
         if (!puntoMasCercano) return;
 
         this.map.fitBounds([puntoMasCercano], {
-          padding: [10, 10], // margen alrededor de los markers
+          padding: [10, 10],
           animate: true,
           duration: 1.5,
           maxZoom: 12
         })
 
-       puntoMasCercano=""
 
       }
 
