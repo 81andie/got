@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
+    "deploy": "ng build --prod --base-href /got/ && npx angular-cli-ghpages --dir=dist/got",
     "test": "ng test"
   },
   "prettier": {
@@ -40,6 +41,7 @@
     "@angular/compiler-cli": "^21.1.0",
     "@tailwindcss/postcss": "^4.2.0",
     "@types/leaflet": "^1.9.21",
+    "angular-cli-ghpages": "^3.0.2",
     "autoprefixer": "^10.4.24",
     "jsdom": "^27.1.0",
     "postcss": "^8.5.6",
