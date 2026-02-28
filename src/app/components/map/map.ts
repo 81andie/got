@@ -6,6 +6,7 @@ import { GotGeoService } from '../../../services/GotGeo.service';
 
 
 
+
 @Component({
   selector: 'app-map',
   imports: [CommonModule],
@@ -13,7 +14,10 @@ import { GotGeoService } from '../../../services/GotGeo.service';
   styleUrl: './map.css',
 })
 export class Map implements OnInit {
+
+
   isBrowser: any;
+
 
   constructor(@Inject(PLATFORM_ID) platformId: Object,
     private gotService: GotGeoService) {
@@ -35,6 +39,9 @@ export class Map implements OnInit {
     })
   }
 
+
+
+
   private gotGeoService = inject(GotGeoService)
   public mapState = inject(GotGeoService);
   public mapStateUpdate = inject(GotGeoService)
@@ -43,6 +50,7 @@ export class Map implements OnInit {
 
   private map: L.Map | undefined;
   private markers: GotGeometry[] = []
+  private miniMap: L.Map | undefined;
 
   private initMap(): void {
     this.map = L.map('map', {
@@ -50,12 +58,43 @@ export class Map implements OnInit {
       zoom: 4
     });
 
-    const tiles = L.tileLayer( 'https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
+
+
+    const tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors' ,
+      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
     });
 
+
     tiles.addTo(this.map);
+
+
+     this.miniMap = L.map('mini-map', {
+    center: [40, -3.7],
+    zoom: 2,
+    zoomControl: false,
+    attributionControl: false
+  });
+
+  L.tileLayer(
+    'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
+  ).addTo(this.miniMap);
+
+   this.map.on('move', () => {
+    if (!this.map || !this.miniMap) return;
+    this.miniMap.setView(
+      this.map.getCenter(),
+      Math.max(this.map.getZoom() - 2, 1),
+      { animate: false }
+    );
+  });
+
+
+
+
+
+
+
 
 
     var popup = L.popup();
@@ -74,7 +113,7 @@ export class Map implements OnInit {
         let puntoA = e.latlng;
 
         let distanciaMinima = Infinity;
-        let puntoMasCercano: L.LatLng |null = null;
+        let puntoMasCercano: L.LatLng | null = null;
 
         coordinatesArr.forEach((item) => {
 

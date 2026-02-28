@@ -15,4 +15,9 @@ font-family: 'Cinzel', serif;
     letter-spacing: 0.05em;
  }
 
- 
+ #mini-map {
+  width: 128px;
+  height: 128px;
+}
+
+
