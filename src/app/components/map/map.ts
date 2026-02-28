@@ -59,7 +59,6 @@ export class Map implements OnInit {
     });
 
 
-
     const tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy; <a href="https://openmaptiles.org/">OpenMapTiles</a> &copy; <a href="https://openstreetmap.org">OpenStreetMap</a> contributors',
@@ -68,33 +67,25 @@ export class Map implements OnInit {
 
     tiles.addTo(this.map);
 
+    this.miniMap = L.map('mini-map', {
+      center: [40, -3.7],
+      zoom: 2,
+      zoomControl: false,
+      attributionControl: false
+    });
 
-     this.miniMap = L.map('mini-map', {
-    center: [40, -3.7],
-    zoom: 2,
-    zoomControl: false,
-    attributionControl: false
-  });
+    L.tileLayer(
+      'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
+    ).addTo(this.miniMap);
 
-  L.tileLayer(
-    'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
-  ).addTo(this.miniMap);
-
-   this.map.on('move', () => {
-    if (!this.map || !this.miniMap) return;
-    this.miniMap.setView(
-      this.map.getCenter(),
-      Math.max(this.map.getZoom() - 2, 1),
-      { animate: false }
-    );
-  });
-
-
-
-
-
-
-
+    this.map.on('move', () => {
+      if (!this.map || !this.miniMap) return;
+      this.miniMap.setView(
+        this.map.getCenter(),
+        Math.max(this.map.getZoom() - 2, 1),
+        { animate: false }
+      );
+    });
 
 
     var popup = L.popup();
