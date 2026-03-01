@@ -1,0 +1,1340 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "got-kings-landing",
+        "series": "Game of Thrones",
+        "scene": "Desembarco del Rey",
+        "real_place": "Dubrovnik",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          }
+        ],
+        "place_image": "assets/dubrovnik.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.10727,
+          42.64575
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "got-braavos",
+        "series": "Game of Thrones",
+        "scene": "Braavos (Arya Stark)",
+        "real_place": "Šibenik",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/sibernic.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          15.895,
+          43.734
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Jardines Kings Landing",
+        "series": "Game of Thrones",
+        "scene": "Jardines King's Landing",
+        "real_place": "Tresteno Arboretum",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Margaery Tyrell",
+            "nameActor": "Natalie Dormer",
+            "image": "assets/nataliedormer.jpg"
+          },
+          {
+            "name": "Sansa Stark",
+            "nameActor": "Sophie Turner",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/tresteno.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          17.9991,
+          42.7236
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Fort Lovrijenac",
+        "series": "Game of Thrones",
+        "scene": "BlackwaterBay",
+        "real_place": "For Lovrijenac",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Cersei Lannyster",
+            "nameActor": "Lena Headey",
+            "image": "assets/Lena.jpg"
+          }
+        ],
+        "place_image": "assets/for.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.1105,
+          42.6405
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Qarth Essos",
+        "series": "Game of Thrones",
+        "scene": "Qarth Essos",
+        "real_place": "Lokrum",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/lokrum.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          18.3399,
+          42.4748
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Meereen",
+        "series": "Game of Thrones",
+        "scene": "Meereen",
+        "real_place": "Split(klis Fortress)",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/splitres.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.5940,
+          43.5138
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Ballintoy Harbour",
+        "series": "Game of Thrones",
+        "scene": "Iron Islands",
+        "real_place": "Ballintoy",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Theon Greyjoy",
+            "nameActor": "Alfie Allen",
+            "image": "/assets/alfieallen"
+          }
+        ],
+        "place_image": "assets/Ballintoy.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.1894,
+          55.2542
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Dark Hedges",
+        "series": "Game of Thrones",
+        "scene": "Kingsroad bosque",
+        "real_place": "Dark Hedges",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          },
+          {
+            "name": "Sansa Stark",
+            "nameActor": "Sophie Turner",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/darkHedges.avif",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.4158,
+          55.0888
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Castle Ward",
+        "series": "Game of Thrones",
+        "scene": "WinterFell Surroundings",
+        "real_place": "Castle Ward",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Ned Stark",
+            "nameActor": "Sean Bean",
+            "image": "assets/seanBean.webp"
+          },
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          },
+          {
+            "name": "Sophie Turner",
+            "nameActor": "Sansa Stark",
+            "image": "assets/sophieTurner.jpg"
+          }
+        ],
+        "place_image": "assets/castleward.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.2240,
+          54.6996
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Tollymore Forest Park",
+        "series": "Game of Thrones",
+        "scene": "Bosques alrededor de Winterfell ",
+        "real_place": "Tollymore Forest Park",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Ned Stark",
+            "nameActor": "Sean Bean",
+            "image": "assets/seanBean.webp"
+          }
+        ],
+        "place_image": "assets/Tollymore.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.8450,
+          54.4009
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Mýrdalsjokull Glacier",
+        "series": "Game of Thrones",
+        "scene": "Mas allá del muro",
+        "real_place": "Mýrdalsjökull Glacier",
+        "country": "Islandia",
+        "actors": [
+          {
+            "name": "Jon Snow",
+            "nameActor": "Kit Harrington",
+            "image": "assets/jon.jpg"
+          },
+          {
+            "name": "Igritte",
+            "nameActor": "Rose Leslie",
+            "image": "assets/roseleslie.jpg"
+          }
+        ],
+        "place_image": "assets/masalladelmuro.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -19.0800,
+          63.6500
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Vatnajökull Glacier",
+        "series": "Game of Thrones",
+        "scene": "Norte Helado",
+        "real_place": "Vatnajökull Glacier",
+        "country": "Islandia",
+        "actors": [
+          {
+            "name": "Jon Snow",
+            "nameActor": "Kit Harrington",
+            "image": "assets/jon.jpg"
+          },
+          {
+            "name": "Igritte",
+            "nameActor": "Rose Leslie",
+            "image": "assets/roseleslie.jpg"
+          },
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          }
+        ],
+        "place_image": "assets/Vatnajokull.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -16.9000,
+          64.0480
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Alcazar de Sevilla",
+        "series": "Game of Thrones",
+        "scene": "Dorne, Water Gardens",
+        "real_place": "Alcázar de Sevilla",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Oberyn Martell",
+            "nameActor": "Pedro Pascal",
+            "image": "assets/pedro.webp"
+          }
+        ],
+        "place_image": "assets/alcazar.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.9913,
+          37.3830
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Osuna Plaza",
+        "series": "Game of Thrones",
+        "scene": "Meereen",
+        "real_place": "Córdoba",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          }
+        ],
+        "place_image": "assets/osuna.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.1357,
+          37.2580
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Roman Ruins of Italica",
+        "series": "Game of Thrones",
+        "scene": "DragonPit",
+        "real_place": "Santiponce",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          }
+        ],
+        "place_image": "assets/italica.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.0020,
+          37.3955
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Itzurun Beach",
+        "series": "Game of Thrones",
+        "scene": "DragonStone",
+        "real_place": "Zumaia",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          },
+          {
+            "name": "Jon Snow",
+            "nameActor": "Kit Harrington",
+            "image": "assets/jon.jpg"
+          }
+        ],
+        "place_image": "assets/zumaia.avif",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.25596,
+          43.29912
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "San Juan de Gaztelugatxe",
+        "series": "Game of Thrones",
+        "scene": "DragonStone",
+        "real_place": "San juan de Gaztelugatxe",
+        "country": "España",
+        "actors": [
+          {
+            "name": "Daenerys Targaryan",
+            "nameActor": "Emilia Clarke",
+            "image": "/assets/emilia.jpg"
+          },
+          {
+            "name": "Tyrion Lannister",
+            "nameActor": "Peter Dinklage",
+            "image": "assets/Peter.webp"
+          },
+          {
+            "name": "Jon Snow",
+            "nameActor": "Kit Harrington",
+            "image": "assets/jon.jpg"
+          }
+        ],
+        "place_image": "assets/gaztelugatxe.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -2.7850,
+          43.4470
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Kästel Comilica",
+        "series": "Game of Thrones",
+        "scene": "Braavos exteriores",
+        "real_place": "Kästel Gomilica",
+        "country": "Croacia",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/catelgomilica.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          16.4860,
+          43.556070
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Catedral de Girona",
+        "series": "Game of Thrones",
+        "scene": "Great Septe of Baelor",
+        "real_place": "Catedral de Girona",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Margaery Tyrell",
+            "nameActor": "Natalie Dormer",
+            "image": "assets/nataliedormer.jpg"
+          },
+          {
+            "name": "Cersei Lannyster",
+            "nameActor": "Lena Headey",
+            "image": "assets/Lena.jpg"
+          },
+          {
+            "name": "Jamie Lannyster",
+            "nameActor": "Nikolaj Coster-Waldau",
+            "image": "assets/jamie.jpeg"
+          }
+        ],
+        "place_image": "assets/catedralGi.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82587,
+          41.98759
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "c.Bisbe Josep Cartañà",
+        "series": "Game of Thrones",
+        "scene": "Bravos/teatro/mercado",
+        "real_place": "Zona Catedral",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          },
+          {
+            "name": "Jaquen H'Ghar",
+            "nameActor": "Tom Wlaschiha",
+            "image": "assets/tomWlaschiha.webp"
+          }
+        ],
+        "place_image": "assets/bisbecartana.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82702,
+          41.98751
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Plaça del Jurats",
+        "series": "Game of Thrones",
+        "scene": "Bravos/teatro/mercado",
+        "real_place": "Plaça dels Jurats",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          },
+          {
+            "name": "Jaquen H'Ghar",
+            "nameActor": "Tom Wlaschiha",
+            "image": "assets/tomWlaschiha.webp"
+          }
+        ],
+        "place_image": "assets/placajurats.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82630,
+          41.98872
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Pont de Galligants",
+        "series": "Game of Thrones",
+        "scene": "Puente de Braavos",
+        "real_place": "Pont de Galligants",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/galligants.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82726,
+          41.98903
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "San Martí Sacosta",
+        "series": "Game of Thrones",
+        "scene": "Persecución Braavos",
+        "real_place": "Sant Martí Sacosta",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/stmartisacosta.webp",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82669,
+          41.98525
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BanysArabs",
+        "series": "Game of Thrones",
+        "scene": "Braavos",
+        "real_place": "Banys Árabs",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/banysarabs.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82570,
+          41.98832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "BanysArabs",
+        "series": "Game of Thrones",
+        "scene": "Braavos",
+        "real_place": "Banys Árabs",
+        "country": "Girona",
+        "actors": [
+          {
+            "name": "Arya Stark",
+            "nameActor": "Maisie Williams",
+            "image": "assets/arya.webp"
+          }
+        ],
+        "place_image": "assets/banysarabs.jpg",
+        "place_logo": "assets/logoGame.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82570,
+          41.98832
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Kings Landing",
+        "series": "House of the Dragon",
+        "scene": "Kings Landing",
+        "real_place": "Cáceres",
+        "country": "Cáceres",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Olivia Cooke",
+            "nameActor": "Alicent Hightower",
+            "image": "assets/oliviacooke.jpg"
+          }
+        ],
+        "place_image": "assets/caceres.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -6.36961,
+          39.47587
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Trujillo",
+        "series": "House of the Dragon",
+        "scene": "Kings Landing",
+        "real_place": "Trujillo",
+        "country": "Cáceres",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          }
+        ],
+        "place_image": "assets/caceres.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.88016,
+          39.45936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Trujillo",
+        "series": "House of the Dragon",
+        "scene": "Kings Landing",
+        "real_place": "Trujillo",
+        "country": "Cáceres",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          }
+        ],
+        "place_image": "assets/caceres.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.88016,
+          39.45936
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Castillo de Calahorra",
+        "series": "House of the Dragon",
+        "scene": "Pentos",
+        "real_place": "Castillo de Calahorra",
+        "country": "Granada",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Olivia Cooke",
+            "nameActor": "Alicent Hightower",
+            "image": "assets/oliviacooke.jpg"
+          }
+        ],
+        "place_image": "assets/castillodecalahorra.webp",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.06548,
+          37.18366
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Jardines de Santa Clotilde",
+        "series": "House of the Dragon",
+        "scene": "Jardines exteriores",
+        "real_place": "Jardins de Santa Clotilde",
+        "country": "Lloret de Mar (Girona)",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Olivia Cooke",
+            "nameActor": "Alicent Hightower",
+            "image": "assets/oliviacooke.jpg"
+          }
+        ],
+        "place_image": "assets/SantaClotilde.webp",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          2.82495,
+          41.69395
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Monsanto",
+        "series": "House of the Dragon",
+        "scene": "Dragonstone",
+        "real_place": "Monsanto",
+        "country": "Portugal",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Olivia Cooke",
+            "nameActor": "Alicent Hightower",
+            "image": "assets/oliviacooke.jpg"
+          }
+        ],
+        "place_image": "assets/monsanto.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.10954,
+          40.04388
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "HolyWell Bay Beach",
+        "series": "House of the Dragon",
+        "scene": "Stepstones coastline",
+        "real_place": "Cornwall",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/Holiwellbeach.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.14315,
+          50.39118
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Kynance Cove",
+        "series": "House of the Dragon",
+        "scene": "Stepstones Camp Beach",
+        "real_place": "Kynance Cove(CornWall)",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/kinanceCove.webp",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.23146,
+          49.97571
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "St Michael's Mount",
+        "series": "House of the Dragon",
+        "scene": "Driftmark castle",
+        "real_place": "Saint Michael's Mount (CornWall)",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/sanmichel.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.47804,
+          50.11709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "St Michael's Mount",
+        "series": "House of the Dragon",
+        "scene": "Driftmark castle",
+        "real_place": "Saint Michael's Mount (CornWall)",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/sanmichel.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.47804,
+          50.11709
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Castleton & Cave Dale",
+        "series": "House of the Dragon",
+        "scene": "Valle y exteriores",
+        "real_place": "Peack District(Castleton, CaveDale)",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          },
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/cavedale.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -1.77782,
+          53.33892
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Bourne Woods",
+        "series": "House of the Dragon",
+        "scene": "Bosque de batalla",
+        "real_place": "Bourne Wood (Surrey)",
+        "country": "Inglaterra",
+        "actors": [
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/BourneWoods.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -0.76894,
+          51.19380
+        ]
+      }
+    },
+
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Dinorwig Quarry",
+        "series": "House of the Dragon",
+        "scene": "Harrental exteriores",
+        "real_place": "Dinorwig(Gwynedd)",
+        "country": "Gales",
+        "actors": [
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          }
+        ],
+        "place_image": "assets/Dinorwig.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.11452,
+          53.13399
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "id": "Penmachno",
+        "series": "House of the Dragon",
+        "scene": "Exteriores rurales",
+        "real_place": "Penmachno Roman Bridge (Gwynedd)",
+        "country": "Gales",
+        "actors": [
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          }
+        ],
+        "place_image": "assets/penmachno.webp",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -3.80529,
+          53.10000
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "Penmon Point",
+        "series": "House of the Dragon",
+        "scene": "Dragonstone Coast",
+        "real_place": "Penmon Point (Anglesey)",
+        "country": "Gales",
+        "actors": [
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          }
+        ],
+        "place_image": "assets/penmon.jpeg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.05895,
+          53.30505
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "Ogwen Valley",
+        "series": "House of the Dragon",
+        "scene": "Montañas y valles exteriores",
+        "real_place": "Ogwen Valley, (Snowdonia)",
+        "country": "Gales",
+        "actors": [
+          {
+            "name": "Matt Smith",
+            "nameActor": "Daemon Targaryen",
+            "image": "assets/matSmith.jpg"
+          },
+          {
+            "name": "Emma D'Arcy",
+            "nameActor": "Rhaenyra Targaryen",
+            "image": "assets/emmaarcy.jpg"
+          }
+        ],
+        "place_image": "assets/ogwenvalley.jpg",
+        "place_logo": "assets/house.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -4.06183,
+          53.19122
+        ]
+      }
+    },
+
+      {
+      "type": "Feature",
+      "properties": {
+        "id": "Glenarm Castle Estate",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Praderas/Campamentos",
+        "real_place": "Castle Estate,(Glenarm)",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/glenarm.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.95612,
+          54.96629
+        ]
+      }
+    },
+
+     {
+      "type": "Feature",
+      "properties": {
+        "id": "Hidden Village of Galboly",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Pueblo rural",
+        "real_place": "Glens of Antrim",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/hiddenVillage.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.98166,
+          55.05404
+        ]
+      }
+    },
+
+       {
+      "type": "Feature",
+      "properties": {
+        "id": "Cave Hill",
+        "series": "El caballero de los 7 reinos",
+        "scene": "Exteriores",
+        "real_place": "Cave Hill,(Belfast)",
+        "country": "Irlanda",
+        "actors": [
+          {
+            "name": "Peter Claffey",
+            "nameActor": "Duncan el Alto",
+            "image": "assets/peterclaffey.avif"
+          },
+          {
+            "name": "Dexter Sol Ansell",
+            "nameActor": "Egg",
+            "image": "assets/DexterSolAnsell.webp"
+          }
+        ],
+        "place_image": "assets/cavehill.jpg",
+        "place_logo": "assets/cablogo.png"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -5.95094,
+          54.64938
+        ]
+      }
+    }
+  ]
+}
