@@ -75,7 +75,7 @@ export class Map implements OnInit {
     });
 
     L.tileLayer(
-      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
+      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
     ).addTo(this.miniMap);
 
     this.map.on('move', () => {
