@@ -171,7 +171,7 @@ export class Map implements OnInit {
 
             layer.bindPopup(`
 
-  <div class="w-64 space-y-4 font-sans bg-stone-100 rounded-lg">
+  <div class="w-64 z-0 space-y-4 font-sans bg-stone-100 rounded-lg">
 
     <!-- Label -->
     <p class="text-xs uppercase tracking-widest text-stone-400">
