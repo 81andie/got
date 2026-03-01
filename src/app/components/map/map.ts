@@ -59,9 +59,9 @@ export class Map implements OnInit {
     });
 
 
-    const tiles = L.tileLayer('https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png', {
+    const tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
       maxZoom: 19,
-      attribution: '&copy; <a href="https://stadiamaps.com/">Stadia Maps</a>, &copy;'
+      attribution: '© OpenStreetMap contributors © CARTO'
     });
 
 
@@ -75,7 +75,7 @@ export class Map implements OnInit {
     });
 
     L.tileLayer(
-      'https://tiles.stadiamaps.com/tiles/alidade_smooth_dark/{z}/{x}/{y}.png'
+      'https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png'
     ).addTo(this.miniMap);
 
     this.map.on('move', () => {
