@@ -1,6 +1,6 @@
 
 <div class="flex justify-center w-full z-40">
-<form class=" flex absolute bottom-7   space-x-2"
+<form class=" flex absolute bottom-2  space-x-2"
    (ngSubmit)="getInputLocalization()"
 >
     <label for="simple-search" class="sr-only">Search</label>
@@ -8,7 +8,7 @@
         <div class="absolute inset-y-0  flex items-center ps-3 pointer-events-none">
             <svg class="w-4 h-4 text-body" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 8v8m0-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 8a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm8-8a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm0 0a4 4 0 0 1-4 4h-1a3 3 0 0 0-3 3"/></svg>
         </div>
-<input type="text" id="simple-search" class="px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium rounded-base ps-9 text-heading text-sm focus:ring-brand focus:border-brand block w-full placeholder:text-body" placeholder="Search branch name..." name="Localization"
+<input type="text" id="simple-search" class="px-3 py-2.5 bg-neutral-secondary-medium border border-default-medium rounded-base ps-9 text-heading text-sm focus:ring-brand focus:border-brand block w-full placeholder:text-body" placeholder="Escribe una ciudad..." name="Localization"
     [(ngModel)]="inputLocalization"
 
 />

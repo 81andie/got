@@ -13,7 +13,9 @@ export class Sidenav {
     constructor(@Inject(PLATFORM_ID) platformId: Object) {
 
     effect(() => {
-      if (this.localization()) {
+      if (!this.localization()) {
+        this.opened = false;
+      }else{
         this.opened = true;
       }
     });
