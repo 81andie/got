@@ -59,7 +59,7 @@ export class Map implements OnInit {
     });
 
 
-    const tiles = L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png', {
+    const tiles = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
       maxZoom: 19,
       attribution: '© OpenStreetMap contributors © CARTO'
     });
@@ -75,7 +75,7 @@ export class Map implements OnInit {
     });
 
     L.tileLayer(
-      'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png'
+      'https://tile.openstreetmap.org/{z}/{x}/{y}.png'
     ).addTo(this.miniMap);
 
     this.map.on('move', () => {
