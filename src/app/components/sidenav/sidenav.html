@@ -4,7 +4,7 @@
    <button
 (click)="toggle()"
 
-   class="rounded-lg inline-flex items-center justify-center text-white bg-mauve-950 box-border border border-transparent hover:bg-amber-300 focus:ring-4 focus:ring-amber-200 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example">
+   class="rounded-lg inline-flex items-center justify-center text-white bg-mauve-950 box-border border border-transparent hover:bg-amber-300 focus:ring-4 focus:ring-amber-200 shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none" type="button" data-drawer-target="drawer-right-example" data-drawer-show="drawer-right-example" data-drawer-placement="right" aria-controls="drawer-right-example" arya-label="drawer-right">
     <svg width="26" height="27" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg"
     class="icon-xl-heavy text-light">
     <path fill-rule="evenodd" clip-rule="evenodd"
@@ -39,7 +39,7 @@
       </h5>
       <button
 (click)="clear()"
-
+      aria-label="btn de cerrar el menu"
       type="button" data-drawer-hide="drawer-right-example" aria-controls="drawer-right-example" class="text-white bg-danger-strong hover:text-heading hover:bg-neutral-tertiary rounded-base w-9 h-9 absolute top-2.5 end-2.5 flex items-center justify-center">
          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
          <span class="sr-only">Close menu</span>
